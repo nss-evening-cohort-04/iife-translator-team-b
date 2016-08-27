@@ -1,15 +1,15 @@
 var Translator = (function(translator) {
 
   var words ={
-    "merry":"joyeux",
-    "christmas":"noel",
+    "merry":"Joyeux",
+    "christmas":"Noel",
     "and":"et",
-    "happy":"bon",
-    "new":"nouveau",
-    "year":"annee"}
+    "happy":"Bon",
+    "new":"Nouveau",
+    "year":"Annee"}
 
   translator.translateToFrench  = function(key) {
-    return words[key];
+    return words[key.toLowerCase()];
   };
 
   return translator;
