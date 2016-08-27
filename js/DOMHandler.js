@@ -14,6 +14,9 @@ function translate() {
       case "spanish":
         return Translator.translateToSpanish(key);
         break;
+      case "german":
+        return Translator.translateToGerman(key);
+        break;
     }
   });
   Translator.setFinalGreeting(newGreetingArr.join(" "));
