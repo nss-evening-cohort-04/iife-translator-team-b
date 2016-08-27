@@ -29,7 +29,7 @@ function speak() {
   msg.rate = 1; // 0.1 to 10
   msg.pitch = 1; //0 to 2
   msg.text = Translator.getFinalGreeting();
-  window.speechSynthesis.speak(msg);
+  speechSynthesis.speak(msg);
 }
 
 translateBtn.addEventListener("click", translate);
