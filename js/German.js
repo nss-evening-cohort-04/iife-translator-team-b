@@ -11,7 +11,7 @@ var Translator = (function(translator) {
   }
 
   translator.translatetoGerman = function(key) {
-    return words[key];
+    return words[key.toLowerCase()];
   };
 
   return translator;
