@@ -9,7 +9,11 @@ var Translator = (function(translator) {
     "year":"Año"}
 
   translator.translateToSpanish  = function(key) {
-    return words[key.toLowerCase()];
+    if(words[key.toLowerCase()]){
+      return words[key.toLowerCase()];
+    }else{
+      return key;
+    }
   };
 
   return translator;
