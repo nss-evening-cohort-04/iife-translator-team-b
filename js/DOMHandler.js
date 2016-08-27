@@ -4,6 +4,13 @@ var outputGreetingDiv = document.getElementById("outputGreeting");
 var languageSelect = document.getElementById("languages");
 var clearButton = document.getElementById("clearBtn");
 
+function validation() {
+  if(inputGreetingTA.value !== ""){
+    translate();
+  } else {
+    alert("Please enter a greeting.");
+  }
+}
 
 function translate() {
   var language = languageSelect.value;
@@ -43,7 +50,7 @@ function speak() {
   speechSynthesis.speak(msg);
 }
 
-translateBtn.addEventListener("click", translate);
+translateBtn.addEventListener("click", validation);
 playBtn.addEventListener("click", speak)
 clearBtn.addEventListener("click", function(){
   document.getElementById("translateForm").reset();
