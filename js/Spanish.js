@@ -1,15 +1,15 @@
 var Translator = (function(translator) {
 
-  var words ={
-    "merry":"alegre",
+  var words = {
+    "merry":"Alegre",
     "christmas":"Navidad",
     "and":"y",
-    "happy":"contento",
-    "new":"nuevo",
-    "year":"año"}
+    "happy":"Contento",
+    "new":"Nuevo",
+    "year":"Año"}
 
   translator.translateToSpanish  = function(key) {
-    return words[key];
+    return words[key.toLowerCase()];
   };
 
   return translator;
