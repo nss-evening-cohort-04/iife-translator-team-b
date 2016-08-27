@@ -11,9 +11,8 @@ var Translator = (function(translator) {
   translator.translateToSpanish  = function(key) {
     if(words[key.toLowerCase()]){
       return words[key.toLowerCase()];
-    }else{
-      return key;
     }
+    return key;
   };
 
   return translator;
