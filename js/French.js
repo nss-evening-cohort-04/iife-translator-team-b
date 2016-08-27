@@ -17,5 +17,6 @@ var Translator = (function(translator) {
     return key;
   };
 
+
   return translator;
 })(Translator);

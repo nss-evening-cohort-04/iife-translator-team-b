@@ -26,6 +26,7 @@ function translate() {
         break;
     }
   });
+  
   Translator.setFinalGreeting(newGreetingArr.join(" "));
   outputGreetingDiv.innerHTML = Translator.getFinalGreeting();
 }
