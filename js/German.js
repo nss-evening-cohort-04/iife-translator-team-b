@@ -15,4 +15,4 @@ var Translator = (function(translator) {
   };
 
   return translator;
-})(translator);
+})(Translator);
