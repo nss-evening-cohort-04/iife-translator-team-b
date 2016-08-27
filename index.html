@@ -3,32 +3,44 @@
 
 <head>
 	<title>IIFE Translator Project</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="" src="translator.css">
+
 </head>
 
 <body>
-	<select id="languages" name="languages">
-	  <option value="spanish">Spanish</option>
-	  <option value="italian">Italian</option>
-	  <option value="french">French</option>
-	  <option value="german">German</option>
-	</select>
+	<div class="container">
+		<div class="col-md-offset-3 col-md-6">
+			<div class="row">
+				<h1>Translate Your Holiday Cards</h1>
+				<div class="form-group">
+					<select id="languages" name="languages" class="form-control">
+			  	<option value="spanish">Spanish</option>
+			  	<option value="italian">Italian</option>
+			  	<option value="french">French</option>
+			  	<option value="german">German</option>
+				</select>
+				</div>
 
-	<div>
-		<textarea id="inputGreeting" rows="4" cols="50"></textarea>
-		<br>
-		<button id="translateBtn" type="button">Translate</button>
-		<button id="playBtn" type="button">Play</button>
-	</div>
+				<div class="form-group">
+					<textarea id="inputGreeting" rows="4" cols="50" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<button id="translateBtn" type="button" class="btn btn-primary"><i class="fa fa-arrow-right" aria-hidden="true"></i> Translate</button>
+					<button id="playBtn" type="button" class="btn btn-secondary"><i class="fa fa-volume-up" aria-hidden="true"></i> Play</button>
+				</div>
+				<div id="outputGreeting"></div>
+			</div>
+		</div>
 
-	<div id="outputGreeting"></div>
-
-	<script src="js/Translator.js"></script>
-	<script src="js/Spanish.js"></script>
-	<script src="js/Italian.js"></script>
-	<script src="js/French.js"></script>
-	<script src="js/German.js"></script>
-	<script src="js/DOMHandler.js"></script>
+		<script src="https://use.fontawesome.com/a10be761a7.js"></script>
+		<script src="js/Translator.js"></script>
+		<script src="js/Spanish.js"></script>
+		<script src="js/Italian.js"></script>
+		<script src="js/French.js"></script>
+		<script src="js/German.js"></script>
+		<script src="js/DOMHandler.js"></script>
 </body>
 
 </html>

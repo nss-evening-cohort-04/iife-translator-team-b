@@ -21,12 +21,11 @@ function translate() {
         return Translator.translateToGerman(key);
         break;
       case "italian":
-        break;
         return Translator.translateToItalian(key);
         break;
     }
   });
-  
+
   Translator.setFinalGreeting(newGreetingArr.join(" "));
   outputGreetingDiv.innerHTML = Translator.getFinalGreeting();
 }
