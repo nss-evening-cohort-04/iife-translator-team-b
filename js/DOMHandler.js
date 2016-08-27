@@ -17,6 +17,7 @@ function translate() {
       case "german":
         return Translator.translateToGerman(key);
         case "italian":
+        break;
         return Translator.translateToItalian(key);
         break;
     }
