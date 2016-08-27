@@ -16,6 +16,8 @@ function translate() {
         break;
       case "german":
         return Translator.translateToGerman(key);
+        case "italian":
+        return Translator.translateToItalian(key);
         break;
     }
   });
