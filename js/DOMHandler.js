@@ -2,6 +2,7 @@ var translateBtn = document.getElementById("translateBtn");
 var inputGreetingTA = document.getElementById("inputGreeting");
 var outputGreetingDiv = document.getElementById("outputGreeting");
 var languageSelect = document.getElementById("languages");
+var clearButton = document.getElementById("clearBtn");
 
 
 function translate() {
@@ -44,3 +45,7 @@ function speak() {
 
 translateBtn.addEventListener("click", translate);
 playBtn.addEventListener("click", speak)
+clearBtn.addEventListener("click", function(){
+  document.getElementById("translateForm").reset();
+  outputGreetingDiv.innerHTML = "";
+})
