@@ -14,9 +14,12 @@ function translate() {
       case "spanish":
         return Translator.translateToSpanish(key);
         break;
+      case "french":
+        return Translator.translateToFrench(key);
+        break;
       case "german":
         return Translator.translateToGerman(key);
-        case "italian":
+      case "italian":
         break;
         return Translator.translateToItalian(key);
         break;
