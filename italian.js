@@ -2,15 +2,15 @@
 var Translator = (function(translator) {
 
 	var words = {
-		"Merry" : "Allegro",
-		"Christmas" : "Natale",
-		"And" : "e",
-		"Happy" : "Contento",
-		"New" : "Nuovo",
-		"Year" : "Anno" }
+		"merry" : "Allegro",
+		"christmas" : "Natale",
+		"and" : "e",
+		"happy" : "Contento",
+		"new" : "Nuovo",
+		"year" : "Anno" }
 
  translator.translateToItalian = function(key) {
-    return words[key];
+    return words[key.toLowerCase()];
   };
 
   return translator;
