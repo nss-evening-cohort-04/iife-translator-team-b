@@ -57,4 +57,10 @@ clearBtn.addEventListener("click", function(){
   document.getElementById("translateForm").reset();
   outputGreetingDiv.innerHTML = "";
   playBtn.classList.add('hidden');
-})
+});
+
+inputGreetingTA.addEventListener("keypress", function(e){
+  if (e && e.keyCode === 13){
+    validation();
+  }
+});
