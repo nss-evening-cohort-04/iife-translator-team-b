@@ -2,11 +2,11 @@
 var Translator = (function(translator) {
 //variable portuguese and its words that correspond with one another 
   var words = {
-    "merry" : "fröhlich",
+    "merry" : "Fröhlich",
     "christmas" : "Weihnachten", 
     "and" : "und", 
-    "happy" : "glücklich", 
-    "new" : "neu", 
+    "happy" : "Glücklich", 
+    "new" : "Neu", 
     "year" : "Jahr"
   }
 
