@@ -7,7 +7,7 @@ var Translator = (function(translator) {
 		"and" : "e",
 		"happy" : "Contento",
 		"new" : "Nuovo",
-		"year" : "Anno" 
+		"year" : "Anno",
 		"birthday" : "compleanno"}
 
  translator.translateToItalian = function(key) {
