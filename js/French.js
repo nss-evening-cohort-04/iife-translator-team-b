@@ -1,7 +1,7 @@
 //translator variable that is used in each of the four languages javascript
 var Translator = (function(translator) {
 //variable portuguese and its words that correspond with one another 
-  var french = {
+  var words = {
     "merry" : "Joyeux",
     "christmas" : "Noel", 
     "and" : "et", 
@@ -10,9 +10,13 @@ var Translator = (function(translator) {
     "year" : "Annee"
   }
 
-  translator.translatetoGerman = function(key) {
-    return words[key.toLowerCase()];
+  translator.translateToFrench  = function(key) {
+    if(words[key.toLowerCase()]){
+      return words[key.toLowerCase()];
+    }
+    return key;
   };
+
 
   return translator;
 })(Translator);
