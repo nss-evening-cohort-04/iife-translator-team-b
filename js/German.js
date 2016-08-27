@@ -10,8 +10,11 @@ var Translator = (function(translator) {
     "year" : "Jahr"
   }
 
-  translator.translatetoGerman = function(key) {
-    return words[key.toLowerCase()];
+  translator.translateToGerman  = function(key) {
+    if(words[key.toLowerCase()]){
+      return words[key.toLowerCase()];
+    }
+    return key;
   };
 
   return translator;
