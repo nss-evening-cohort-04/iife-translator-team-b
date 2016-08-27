@@ -1,0 +1,21 @@
+.hidden{
+  display: none;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.outputGreeting {
+  margin: 10px;
+}
+
+body {
+  background-color: YellowGreen;
+}
+
+.content {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+}
