@@ -10,7 +10,7 @@ var Translator = (function(translator) {
     "year" : "Annee"
   }
 
-  translator.translatetoGerman = function(key) {
+  translator.translatetoFrench = function(key) {
     return words[key.toLowerCase()];
   };
 
