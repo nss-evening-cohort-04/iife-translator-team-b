@@ -29,6 +29,7 @@ function translate() {
 
   Translator.setFinalGreeting(newGreetingArr.join(" "));
   outputGreetingDiv.innerHTML = Translator.getFinalGreeting();
+  playBtn.classList.remove('hidden');
 }
 
 function speak() {
@@ -48,4 +49,5 @@ playBtn.addEventListener("click", speak)
 clearBtn.addEventListener("click", function(){
   document.getElementById("translateForm").reset();
   outputGreetingDiv.innerHTML = "";
+  playBtn.classList.add('hidden');
 })
